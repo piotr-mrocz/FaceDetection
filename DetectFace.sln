@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DetectFace", "DetectFace\DetectFace.pyproj", "{BED41418-C412-4CC7-83B0-BC470F4A436C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BED41418-C412-4CC7-83B0-BC470F4A436C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED41418-C412-4CC7-83B0-BC470F4A436C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {260D5B72-5D20-413C-A7DE-B40206D0FB73}
+	EndGlobalSection
+EndGlobal
