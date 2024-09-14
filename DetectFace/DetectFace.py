@@ -9,7 +9,7 @@ widthWindow = 640
 frameName = 'My camera'
 rgbZielony = (0, 128, 0)
 thickness = 5
-
+extraArea = 20
 
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT, heightWindow)
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, widthWindow)
@@ -32,7 +32,8 @@ while True:
     )
     
     for x, y, face_width, face_height in faces:
-        cv2.rectangle(img, (x, y), (x + face_width, y + face_height), rgbZielony, thickness)
+        # check face
+        cv2.rectangle(img, (x, y + 20), (x + face_width + extraArea, y + face_height + extraArea), rgbZielony, thickness)
 
     cv2.imshow(frameName, img)
     
