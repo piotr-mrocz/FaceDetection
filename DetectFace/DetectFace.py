@@ -26,7 +26,7 @@ while True:
     # face detection
     faces = faceDetector.detectMultiScale(
         grayImg,
-        scaleFactor = 1.2,
+        scaleFactor = 2,
         minNeighbors = 4,
         minSize = (50, 50)
     )
@@ -34,6 +34,10 @@ while True:
     for x, y, face_width, face_height in faces:
         # check face
         cv2.rectangle(img, (x, y + 20), (x + face_width + extraArea, y + face_height + extraArea), rgbZielony, thickness)
+        
+        #face blur
+        blur = cv2.blur(img[y+20:y + face_height + extraArea, x:x + face_width + extraArea], ksize=(50, 50))
+        img[y+20:y + face_height + extraArea, x:x + face_width + extraArea] = blur
 
     cv2.imshow(frameName, img)
     
